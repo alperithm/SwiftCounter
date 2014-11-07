@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7h-xv-mdr">
+                                <rect key="frame" x="235" y="245" width="130" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="ESJ-WE-A7e"/>
+                                    <constraint firstAttribute="height" constant="68" id="v4P-Or-fK6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ESJ-WE-A7e"/>
+                                        <exclude reference="v4P-Or-fK6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ESJ-WE-A7e"/>
+                                        <include reference="v4P-Or-fK6"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y10-a7-C4W">
+                                <rect key="frame" x="252" y="434" width="96" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="kOK-oY-BGX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.20491653849757152" blue="0.16407853561251895" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kOK-oY-BGX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="kOK-oY-BGX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="countResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Hm-yi-oG9"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="XRQduFO0.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dud-l2-uoq">
+                                <rect key="frame" x="198" y="7" width="204" height="204"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-49-JDr">
+                                <rect key="frame" x="289" y="362" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="countUpButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bbx-uA-aEt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t7h-xv-mdr" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="10v-nO-Sqt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="y10-a7-C4W" secondAttribute="bottom" constant="119" id="Kuh-78-H17"/>
+                            <constraint firstAttribute="centerX" secondItem="dud-l2-uoq" secondAttribute="centerX" id="Kyf-kk-eRn"/>
+                            <constraint firstAttribute="centerX" secondItem="Pap-49-JDr" secondAttribute="centerX" id="MJz-II-qOA"/>
+                            <constraint firstAttribute="centerX" secondItem="Pap-49-JDr" secondAttribute="centerX" id="THG-k2-ZfB"/>
+                            <constraint firstItem="t7h-xv-mdr" firstAttribute="centerX" secondItem="Pap-49-JDr" secondAttribute="centerX" id="Uzk-7m-buI"/>
+                            <constraint firstAttribute="centerY" secondItem="dud-l2-uoq" secondAttribute="centerY" id="WbO-71-WZB"/>
+                            <constraint firstItem="y10-a7-C4W" firstAttribute="centerX" secondItem="Pap-49-JDr" secondAttribute="centerX" id="WrI-Xc-8FO"/>
+                            <constraint firstItem="y10-a7-C4W" firstAttribute="top" secondItem="Pap-49-JDr" secondAttribute="bottom" constant="43" id="XnP-x8-Rym"/>
+                            <constraint firstAttribute="centerY" secondItem="Pap-49-JDr" secondAttribute="centerY" constant="-81" id="YaW-N7-oWx"/>
+                            <constraint firstAttribute="centerY" secondItem="Pap-49-JDr" secondAttribute="centerY" id="aFV-PT-Khv">
+                                <variation key="widthClass=compact" constant="-81"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="dud-l2-uoq" secondAttribute="centerX" id="bpt-F5-Q1c"/>
+                            <constraint firstAttribute="centerY" secondItem="dud-l2-uoq" secondAttribute="centerY" constant="190" id="hT4-Ul-5bi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kyf-kk-eRn"/>
+                                <exclude reference="WbO-71-WZB"/>
+                                <exclude reference="bpt-F5-Q1c"/>
+                                <exclude reference="hT4-Ul-5bi"/>
+                                <exclude reference="10v-nO-Sqt"/>
+                                <exclude reference="Uzk-7m-buI"/>
+                                <exclude reference="MJz-II-qOA"/>
+                                <exclude reference="THG-k2-ZfB"/>
+                                <exclude reference="YaW-N7-oWx"/>
+                                <exclude reference="aFV-PT-Khv"/>
+                                <exclude reference="WrI-Xc-8FO"/>
+                                <exclude reference="XnP-x8-Rym"/>
+                                <exclude reference="Kuh-78-H17"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Kyf-kk-eRn"/>
+                                <exclude reference="WbO-71-WZB"/>
+                                <include reference="bpt-F5-Q1c"/>
+                                <include reference="hT4-Ul-5bi"/>
+                                <include reference="10v-nO-Sqt"/>
+                                <include reference="Uzk-7m-buI"/>
+                                <include reference="MJz-II-qOA"/>
+                                <include reference="THG-k2-ZfB"/>
+                                <include reference="YaW-N7-oWx"/>
+                                <include reference="aFV-PT-Khv"/>
+                                <include reference="WrI-Xc-8FO"/>
+                                <include reference="XnP-x8-Rym"/>
+                                <include reference="Kuh-78-H17"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="counter" destination="t7h-xv-mdr" id="6rb-5b-ODx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="XRQduFO0.jpeg" width="204" height="204"/>
+    </resources>
+</document>
